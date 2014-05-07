@@ -1,0 +1,19 @@
+
+apply plugin:'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.0-rc-4'
+    compile group: 'commons-cli', name : 'commons-cli', version: '1.2'
+    compile 'org.json:json:20140107'
+}
+
+//jar {
+//    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//}
+//
+//manifest.mainAttributes("Main-Class" : "main")
+
